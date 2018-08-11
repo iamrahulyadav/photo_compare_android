@@ -13,10 +13,14 @@
         android:layout_alignParentTop="true"
         android:text="Process" />
 
-    <ImageView
-        android:id="@+id/imgview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button" />
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/button"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"></GridView>
 
 </RelativeLayout>
